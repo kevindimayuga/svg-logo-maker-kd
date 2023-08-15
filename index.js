@@ -7,12 +7,30 @@ const inquirer = require('inquirer');
 // import shapes
 const {circle, square, triangle} = require('./lib/shapes');
 
+// create a class svg that contains a constructor with methods to render and set the text and shape elements in the svg string
+class svg {
+    constructor(){
+        this.textElement = ''
+        this.shapeElement = ''
+    }
+    render(){
+        return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">${this.shapeElement}${this.textElement}</svg>`
+    }
+    setTextElement(text, color){
+        this.textElement = `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${color}">${text}</text>`
+    }
+    setShapeElement(shape){
+        this.setShapeElement = shape.render()
+    }
+}
+
+// list of questions for user to answer using the inquirer library
 const questions = [
     
     {
         type: 'input',
         name: 'text',
-        message: 'Enter up to three characters:',
+        message: 'Enter up to three characters for your logo:',
     },
     
     {
