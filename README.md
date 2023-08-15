@@ -20,10 +20,10 @@ The motivation behind this project is to create a web application from scratch. 
 ## Webpage Screenshot
 
 #### CLI application test example:
-![readme generator command line example screenshot](./assets/images/cli-application-test-kd.PNG)
+![svg logo maker command line example screenshot](./assets/images/cli-application-test-kd.PNG)
 
 #### Generated SVG Logo test example:
-![generated README example screenshot](./assets/images/generated-readme-example-kd.PNG)
+![svg logo maker example screenshot](./assets/images/generated-readme-example-kd.PNG)
 
 ## Table of Contents
 
@@ -66,8 +66,7 @@ Node.js Updates
 - Open repo in local CLI
 - Make sure node packages are installed by running 'npm i'
 - Run 'node index.js' in CLI
-- Fill out reach question/prompt for the readme generator
-- Open up generated readme with all sections/information
+-
 
 ## Credits
 
@@ -77,8 +76,8 @@ I used the following resources to help guide me to complete the portfolio projec
 - [W3Schools](https://www.w3schools.com/)
 - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 - [Node.js Introduction](https://www.w3schools.com/nodejs/nodejs_intro.asp)
-- []() jest
-- []() inquirer
+- [Inquirer.js](https://www.npmjs.com/package/inquirer/v/8.2.4)
+- [Jest](https://www.npmjs.com/package/jest)
 - [How to take a full page screenshot with a hidden Chrome shortcut](https://zapier.com/blog/full-page-screenshots-in-chrome/)
 
 ## License
