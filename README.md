@@ -1,7 +1,6 @@
 # SVG Logo Maker
 
-This repo is for module ten's challenge assignment.
-
+M10 - This repo is a SVG Logo Maker that will generate a logo and save it as an SVG file based on the user's inputs to each prompt in the Node.js command-line application.
 
 ## Description
 
