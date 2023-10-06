@@ -32,8 +32,10 @@ const questions = [
 
 // function to generate the SVG logo
 function writeToFile(folderName, fileName, data) {
+    // Set the file name
+    const userFileName = `${fileName}-logo.svg`;
     // set the path for the created file
-    const filePath = `${folderName}/${fileName}`;
+    const filePath = `${folderName}/${userFileName}`;
     fs.writeFile(filePath, data, (error) => {
         if (error) {
             console.log(error);
@@ -54,14 +56,33 @@ function init() {
         const logoShape = answers['logo-shape'];
         const logoColor = answers['logo-color'];
 
-        // create the SVG logo using the user input answers
-        const svgLogo = `<?xml version="1.0" encoding="UTF-8"?>
-        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100" height="100" fill="${logoColor}" />
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="50" fill="${logoTextColor}">${logoText}</text>
-        </svg>`;
+        let shapeInstance;
 
-        writeToFile('output', 'logo.svg', svgLogo);
+        // Create an instance of the selected shape class
+        switch (logoShape) {
+            case 'circle':
+                shapeInstance = new Circle(logoColor);
+                break;
+            case 'square':
+                shapeInstance = new Square(logoColor);
+                break;
+            case 'triangle':
+                shapeInstance = new Triangle(logoColor);
+                break;
+            default:
+                console.log('Please choose another shape.');
+                return;
+        }
+
+        // Generate the SVG logo using the shape instance
+        const svgLogo = `<?xml version="1.0" encoding="UTF-8"?>
+      <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        ${shapeInstance.render()}
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="40" fill="${logoTextColor}">${logoText}</text>
+      </svg>`;
+
+        // Call the writeToFile function to create the file
+        writeToFile('output', logoText, svgLogo);
     });
 }
 
