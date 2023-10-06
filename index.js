@@ -38,4 +38,29 @@ function writeToFile(fileName, data) {
     }
 }
 
+// function to initialize the application
+function init() {
+    // call to inquirer to ask the questions and store the answers
+    inquirer.prompt(questions).then((answers) => {
+        // store the answers in variables
+        const logoText = answers['logo-text'];
+        const logoTextColor = answers['logo-text-color'];
+        const logoShape = answers['logo-shape'];
+        const logoColor = answers['logo-color'];
+
+        // create the SVG logo using the answers
+        const svgLogo = `<?xml version="1.0" encoding="UTF-8"?>
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="${logoColor}" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="50" fill="${logoTextColor}">${logoText}</text>
+        </svg>`;
+
+        writeToFile('logo.svg', svgLogo);
+    });
+}
+
+// call to initialize the application
+init();
+
+// export the writeToFile function
 module.exports = writeToFile;
