@@ -31,8 +31,10 @@ const questions = [
 ];
 
 // function to generate the SVG logo
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (error) => {
+function writeToFile(folderName, fileName, data) {
+    // set the path for the created file
+    const filePath = `${folderName}/${fileName}`;
+    fs.writeFile(filePath, data, (error) => {
         if (error) {
             console.log(error);
         }
@@ -52,14 +54,14 @@ function init() {
         const logoShape = answers['logo-shape'];
         const logoColor = answers['logo-color'];
 
-        // create the SVG logo using the answers
+        // create the SVG logo using the user input answers
         const svgLogo = `<?xml version="1.0" encoding="UTF-8"?>
         <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <rect width="100" height="100" fill="${logoColor}" />
             <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="50" fill="${logoTextColor}">${logoText}</text>
         </svg>`;
 
-        writeToFile('logo.svg', svgLogo);
+        writeToFile('output', 'logo.svg', svgLogo);
     });
 }
 
