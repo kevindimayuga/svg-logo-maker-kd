@@ -15,7 +15,7 @@ const questions = [
     {
         type: 'input',
         name: 'logo-text-color',
-        message: 'Enter a color for the text (color name or hex value):',
+        message: 'Enter a color for the text that is displayed on the logo (color name or hex value):',
     },
     {
         type: 'list',
@@ -32,13 +32,14 @@ const questions = [
 
 // function to generate the SVG logo
 function writeToFile(fileName, data) {
-    try {
-        fs.writeFile(fileName, data);
-        console.log('Success! Your logo has been created.');
-
-    } catch (error) {
-        console.log(error);
-    }
+    fs.writeFile(fileName, data, (error) => {
+        if (error) {
+            console.log(error);
+        }
+        else {
+            console.log('Success! Your logo has been created.');
+        }
+    });
 }
 
 // function to initialize the application
