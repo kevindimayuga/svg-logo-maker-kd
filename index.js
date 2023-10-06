@@ -26,3 +26,16 @@ const questions = [
         message: 'Enter a color for the logo (color name or hex value):',
     },
 ];
+
+// function to generate the SVG logo
+function writeToFile(fileName, data) {
+    try {
+        fs.writeFile(fileName, data);
+        console.log('Success! Your logo has been created.');
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+module.exports = writeToFile;
