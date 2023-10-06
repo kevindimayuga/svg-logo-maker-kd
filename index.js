@@ -2,6 +2,9 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+// import the shapes from the shapes.js file
+const { Circle, Square, Triangle } = require('./lib/shapes.js');
+
 // defines the questions to be asked using inquirer and stores the answers in a variable
 const questions = [
     {
@@ -18,7 +21,7 @@ const questions = [
         type: 'list',
         name: 'logo-shape',
         message: 'Please select a shape for the logo:',
-        choices: ['circle', 'triangle', 'square'],
+        choices: ['circle', 'square', 'triangle',],
     },
     {
         type: 'input',
