@@ -1,5 +1,7 @@
 # SVG Logo Maker
 
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 M10 - This repo is a SVG Logo Maker that will generate a logo and save it as an SVG file based on the user's inputs to each prompt in the Node.js command-line application.
 
 ## Description
@@ -63,8 +65,9 @@ Node.js Updates
 
 - Clone repo onto local device
 - Open repo in local CLI
-- Make sure node packages are installed by running 'npm i'
-- Run 'node index.js' in CLI
+- Make sure node packages are installed by running `npm i`
+    - `Inquirer` and `Jest` need to be installed within the package.json
+- Run `node index.js` in CLI
 -
 
 ## Credits
@@ -85,17 +88,14 @@ I used the following resources to help guide me to complete the portfolio projec
 
 ## Badges
 
-![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
-
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
-![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 
 ## Features
 
