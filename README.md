@@ -13,7 +13,7 @@ The motivation behind this project is to create a web application from scratch. 
 ## Accessing the Repo or Webpage:
 
 - GitHub Repo URL: https://github.com/kevindimayuga/svg-logo-maker-kd
-- GitHub Pages WebPage Deployment URL: n/a
+- GitHub Pages WebPage Deployment URL: https://kevindimayuga.github.io/svg-logo-maker-kd/
 
 - Since this will be a command-line application and not a webpage application, you can use the following [LINK](https://drive.google.com/file/d/1n4jqby6HYdnsotiH87S_bE5M_-LJ9Jzr/view) to access a video walkthrough on how to use the README generator application.
     - [SVG Logo Maker Video Walkthrough](https://drive.google.com/file/d/1n4jqby6HYdnsotiH87S_bE5M_-LJ9Jzr/view)
@@ -23,7 +23,7 @@ The motivation behind this project is to create a web application from scratch. 
 #### CLI npm testing example:
 ![svg logo maker npm testing screenshot](./assets/images/npm-test-screenshot.PNG)
 
-#### Generated SVG Logo test example:
+#### Running svg-logo-maker application and a generated SVG Logo example:
 ![svg logo maker example screenshot]()
 
 ## Table of Contents

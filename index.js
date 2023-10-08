@@ -75,11 +75,10 @@ function init() {
         }
 
         // Generate the SVG logo using the shape instance
-        const svgLogo = `<?xml version="1.0" encoding="UTF-8"?>
-      <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        const svgLogo = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200">
         ${shapeInstance.render()}
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="40" fill="${logoTextColor}">${logoText}</text>
-      </svg>`;
+        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${logoTextColor}">${logoText}</text>
+        </svg>`;
 
         // Call the writeToFile function to create the file
         writeToFile('output', logoText, svgLogo);
