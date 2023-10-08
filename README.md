@@ -18,13 +18,13 @@ The motivation behind this project is to create a web application from scratch. 
 - Since this will be a command-line application and not a webpage application, you can use the following [LINK](https://drive.google.com/file/d/1n4jqby6HYdnsotiH87S_bE5M_-LJ9Jzr/view) to access a video walkthrough on how to use the README generator application.
     - [SVG Logo Maker Video Walkthrough](https://drive.google.com/file/d/1n4jqby6HYdnsotiH87S_bE5M_-LJ9Jzr/view)
 
-## Webpage Screenshot
+## Screenshots
 
-#### CLI application test example:
-![svg logo maker command line example screenshot](./assets/images/cli-application-test-kd.PNG)
+#### CLI npm testing example:
+![svg logo maker npm testing screenshot](./assets/images/npm-test-screenshot.PNG)
 
 #### Generated SVG Logo test example:
-![svg logo maker example screenshot](./assets/images/generated-readme-example-kd.PNG)
+![svg logo maker example screenshot]()
 
 ## Table of Contents
 
@@ -68,7 +68,9 @@ Node.js Updates
 - Make sure node packages are installed by running `npm i`
     - `Inquirer` and `Jest` need to be installed within the package.json
 - Run `node index.js` in CLI
--
+- Follow prompts and answer questions
+- New 'logo.svg' file will be created in the 'output' folder
+- To run npm tests to make sure everything passes, run `npm run test` in CLI
 
 ## Credits
 
