@@ -15,16 +15,16 @@ The motivation behind this project is to create a web application from scratch. 
 - GitHub Repo URL: https://github.com/kevindimayuga/svg-logo-maker-kd
 - GitHub Pages WebPage Deployment URL: https://kevindimayuga.github.io/svg-logo-maker-kd/
 
-- Since this will be a command-line application and not a webpage application, you can use the following [LINK](https://drive.google.com/file/d/1n4jqby6HYdnsotiH87S_bE5M_-LJ9Jzr/view) to access a video walkthrough on how to use the README generator application.
-    - [SVG Logo Maker Video Walkthrough](https://drive.google.com/file/d/1n4jqby6HYdnsotiH87S_bE5M_-LJ9Jzr/view)
+- Since this will be a command-line application and not a webpage application, you can use the following [LINK](https://drive.google.com/file/d/15BOovlk2xjK2iz_S8SkLs08eZEKZR7H9/view?usp=sharing) to access a video walkthrough on how to use the SVG Logo Maker application.
+    - [SVG Logo Maker Video Walkthrough](https://drive.google.com/file/d/15BOovlk2xjK2iz_S8SkLs08eZEKZR7H9/view?usp=sharing)
 
 ## Screenshots
 
-#### CLI npm testing example:
-![svg logo maker npm testing screenshot](./assets/images/npm-test-screenshot.PNG)
+#### VSCode npm testing and app walkthrough:
+![svg logo maker npm testing screenshot](./assets/images/npm-test-and-app-walkthrough-screenshot.PNG)
 
-#### Running svg-logo-maker application and a generated SVG Logo example:
-![svg logo maker example screenshot]()
+#### Generated SVG Logo example:
+![svg logo maker example logo screenshot](./assets/images/example-logo.PNG)
 
 ## Table of Contents
 
@@ -83,6 +83,15 @@ I used the following resources to help guide me to complete the portfolio projec
 - [Inquirer.js](https://www.npmjs.com/package/inquirer/v/8.2.4)
 - [Jest](https://www.npmjs.com/package/jest)
 - [How to take a full page screenshot with a hidden Chrome shortcut](https://zapier.com/blog/full-page-screenshots-in-chrome/)
+
+SVG documentation were extremely helping in debugging and updating my code in this project:
+
+- [SVG example logo](https://static.fullstack-bootcamp.com/fullstack-ground/module-10/circle.svg)
+- [SVG Wikipedia](https://en.wikipedia.org/wiki/SVG)
+- [SVG Tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
+- [Basic SVG Shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
+- [Text in SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts)
+- [SVG VS Code Extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
 ## License
 
